@@ -2,6 +2,9 @@
 title: "Additional Resources"
 ---
 
+### Course E-book: 
+["Structural Equation Modeling in R for Ecology and Evolution"](https://jslefche.github.io/sem_book/)
+
 ### Useful Books
 James B. Grace.  2006.  Structural Equation Modeling and Natural Systems. Cambridge University Press. [<a href="http://www.amazon.com/Structural-Equation-Modeling-Natural-Systems/dp/0521546532/">amazon</a>]<br />
 <br />
