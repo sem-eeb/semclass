@@ -54,6 +54,4 @@ install.packages("lavaanPlot")
 
 install.packages("daggity")
 
-library(devtools)
-
-install_github("jslefche/piecewiseSEM@devel")
+devtools::install_github("jslefche/piecewiseSEM@devel")
