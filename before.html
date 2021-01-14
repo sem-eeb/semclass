@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -22,6 +22,17 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -69,9 +80,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -85,7 +94,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -190,8 +198,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -236,6 +242,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -248,20 +255,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -316,23 +320,23 @@ $(document).ready(function () {
 </div>
 
 
-<p>Hello everyone! I’m looking forward to our upcoming journey into the wild world of Structural Equation Modeling together. Before the class begins, I want to make sure you all are prepared so that you can get the most out of it and to have you work through this preclass-excercise and tutorial.</p>
-<p>The course is going to be a mixture of lecture and hands-on exercises. Aside from model building and identification exercises, everything else will be in R. I am going to assume that you have at least basic proficiency in R. You will need basic proficiency in order to work through the the class. What does basic proficiency mean? I expect that</p>
+<p>Hello everyone! We’re looking forward to our upcoming journey into the wild world of Structural Equation Modeling together. Before the class begins, I want to make sure you all are prepared so that you can get the most out of it and to have you work through this preclass-excercise and tutorial.</p>
+<p>The course is going to be a mixture of lecture and hands-on exercises. Aside from model building and identification exercises, everything else will be in R. We will assume that you have at least basic proficiency in R. You will need basic proficiency in order to work through the the class. What does basic proficiency mean? We expect that</p>
 <ol start="0" style="list-style-type: decimal">
-<li>You have R installed on your computer and be able to access help files.</li>
+<li>You have the latest version of <a href="https://cran.r-project.org/">R 4.0.3</a> installed on your computer and be able to access help files. It is also helpful to have the latest version of <a href="https://rstudio.com/products/rstudio/download/#download">R Studio</a> installed so you are able to follow along with the instructors</li>
 <li>You can install and load new libraries, as shown in the preclass tutorial.</li>
 <li>You are able to load in data files as shown in the preclass tutorial.</li>
 <li>You can plot a relationship between two variables from your data.</li>
 <li>You can perform a basic linear regression, and get summary statistics for parameter fits and F-tests.</li>
 </ol>
-<p>I would then ask that you <a href="./files/scripts/Install_Required_Packages.R">run this script</a> to install the packages for the course. If you have any questions, <a href="mailto:jarrett.byrnes@umb.edu">contact me</a>.</p>
+<p>I would then ask that you <a href="./files/scripts/Install_Required_Packages.R">run this script</a> to install the packages for the course. If you have any questions, <a href="mailto:jarrett.byrnes@umb.edu">contact us</a>.</p>
 <p>Last, if you’d like, try out this <a href="./files/Preclass_lavaan_exercise.zip">preclass lavaan exercise</a> to start to get a feel for some of what we’ll be doing.</p>
 <p><strong>But I don’t know R!</strong> If you cannot do the things in the list above, there are a few remedies. Note, you <em>must</em> do one or more of following. As this is a short, sharp, hands-on workshop, if you are not able to work in R, you won’t get nearly as much out of the workshop as you would have otherwise. So, one or more of the following should get you prepped and ready.</p>
 <ul>
 <li><p>Find a <a href="https://datacarpentry.org/">Data Carpentry</a> workshop nearby that is teaching R. If you’re thinking of organizing a course, and know you will have a number of learners who are not R proficient, even consider hosting one of these workshops a few weeks before my workshop. It’s a great way to start building a community of practice.</p></li>
 <li><p>Try an interactive tutorial. There is a great interactive tutorial for R, called <a href="https://swirlstats.com/">Swirl!</a> So, run, do not walk, on over to <a href="https://swirlstats.com/">their website</a> and go through the process to install R and Swirl. Then, go through the “R Programming” module and the “Data Analysis” module at bare minimum (see here if they don’t load automatically). The “Regression Models” module will also likely be very helpful.</p></li>
 <li><p>Work through the <a href="https://datacarpentry.org/R-ecology-lesson/">Data Carpentry Ecology curriculum</a> - this is a stellar set of lessons that I use in many of my own classes (and sometimes teach).</p></li>
-<li><p>Work through the lab handouts for weeks 1, 3, 5, and 6 of <a href="https://biol607.github.io/schedule.html">my own intro biostats course</a>. It’s what I teach, and those weeks provide you with the background you need for this course - and beyond. Feel free to try out other lessons to build your chops.</p></li>
+<li><p>Work through the lab handouts for weeks 1, 3, 5, and 6 of <a href="https://biol607.github.io/schedule.html">Jarrett’s own intro biostats course</a>. It’s what I teach, and those weeks provide you with the background you need for this course - and beyond. Feel free to try out other lessons to build your chops.</p></li>
 </ul>
 
 
@@ -344,7 +348,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -352,6 +356,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
