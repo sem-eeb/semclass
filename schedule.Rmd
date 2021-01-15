@@ -5,7 +5,8 @@ The general schedule for the course is below. Please note, for readings the u/p 
 \
 For the course, we'll also use a number of common data sets which you can download (and put into a data folder) [here](files/data.zip).   
 \
-## Day 1. Introduction to SEM
+
+## Day 1. Introduction to SEM  
 __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
 __Lectures:__  [What is SEM? A Practical and Historical Overview](lecture_pdfs/SEM_Intro_And_History.pdf)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
