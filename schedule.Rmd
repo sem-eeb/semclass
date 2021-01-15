@@ -33,7 +33,7 @@ __Lectures:__  	[Engines of SEM: Local Estimation with piecewiseSEM](lecture_pdf
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [A Nonlinear, Non-normal world](lecture_pdfs/Nonlinear_nonnormal.pdf), [code](files/scripts/nonlinear_nonnormal.R)      
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Categorical Variables and Multigroup Analysis](lecture_pdfs/Categorical_Variables.pdf), [code](files/scripts/Categorical_Vars.R), [multigroup_margins.R](files/scripts/multigroup_margins.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Mixed Models in SEM](lecture_pdfs/Mixed_Models.pdf), [code](files/scripts/Mixed_Models.R)    
-__Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](http://byrneslab.net//classes/sem_pdfs/d-sep/Shipley%202009%20dsep%20with%20multilevel%20models.pdf), [Lefcheck 2016](https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0)
+__Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0), [Lefcheck 2016](https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0)
 \
 \
 
