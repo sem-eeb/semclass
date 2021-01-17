@@ -13,6 +13,7 @@
 
 <title>Course Schedule</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -326,14 +327,13 @@ For the course, we’ll also use a number of common data sets which you can down
 </p>
 <div id="day-1.-introduction-to-sem" class="section level2">
 <h2>Day 1. Introduction to SEM</h2>
-<p><strong>Overview:</strong> We discuss just what is SEM. Along the way we’ll discuss it’s origins, give a general example of moving from a traditional ANOVA-esque framework and then to observational data, and finally discuss how to build a well-justified causal model. Causality will be central, and we won’t pull any punches! We’ll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.<br />
+<p><strong>Overview:</strong> We discuss just what is SEM. Along the way we’ll discuss it’s origins, give a general example of moving from a traditional ANOVA-esque framework and to observational data, and finally discuss how to build a well-justified causal model. Causality will be central, and we won’t pull any punches! We’ll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.<br />
 <strong>Lectures:</strong> <a href="lecture_pdfs/1_A_Brief_History.pdf">What is SEM? A Practical and Historical Overview</a><br />
-            <a href="lecture_pdfs/2_The_Basics.pdf">Anatomy of SEM</a><br />
+            <a href="lecture_pdfs/Anatomy_of_SEM.pdf">Anatomy of SEM</a><br />
             <a href="lecture_pdfs/Multivariate_Causal_Models.pdf">Building Multivariate Causal Models</a>, <a href="files/scripts/multivariate_causal_models.R">code</a><br />
 <strong>Readings:</strong> <a href="https://www.dropbox.com/s/zbj2h646z00daxx/Grace%20et%20al%202010%20Ecol%20Monogr.pdf?dl=0">Grace 2010</a> (overview), <a href="https://www.dropbox.com/s/cuwk8vngmqjgfgc/Whalen%20et%20al%202013%20Ecology.pdf?dl=0">Whalen et al. 2013</a> (example) (note: semclass/semclass for pdfs)<br />
 <strong>Optional Reading:</strong> <a href="https://www.dropbox.com/s/a2y7z4pmfda1qwq/Matsueda%202012%20history.pdf?dl=0">Matsueda 2012</a> (history), <a href="https://www.dropbox.com/preview/2020%20Virtual/readings/pearl-causal-lecture.pdf?role=work">Pearl 2012a</a> (history of causality), <a href="readings/Grace_and_Irvine_2019.pdf">Grace and Irvine 2019</a> (building causal models for SEM)<br />
 <strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-intro-2021" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-intro-2021</a><br />
-<strong>Jamboard:</strong> <a href="https://jamboard.google.com/d/1HaPb_HXL529uPbDfS78tokR_YdWK7tcJfaF28h5zgxc/viewer?ts=600344bd">Google Jamboard</a><br />
 <br />
 <br />
 </p>
@@ -344,7 +344,9 @@ For the course, we’ll also use a number of common data sets which you can down
 <strong>Lectures:</strong> <a href="lecture_pdfs/Intro_to_Likelihood_Fitting.pdf">Engines of SEM: Covariance-Based Estimation</a>, <a href="files/scripts/Likelihood_Fitting.R">code</a><br />
             <a href="lecture_pdfs/Assesing_Likelihood_Fits.pdf">What does it mean to evaluate a multivariate hypothesis?</a>, <a href="files/scripts/Assessing_Likelihood.R">code</a>, <a href="files/scripts/fitted_lavaan.R">fitted_lavaan.R</a><br />
             <a href="lecture_pdfs/Latent_Variables.pdf">Latent Variable models</a>, <a href="files/scripts/Latent_variables.R">code</a><br />
-<strong>Readings:</strong> <a href="https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0">Grace and Bollen 2005</a> <strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/global-estimation.html" class="uri">https://jslefche.github.io/sem_book/global-estimation.html</a> <strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021</a></p>
+<strong>Readings:</strong> <a href="https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0">Grace and Bollen 2005</a><br />
+<strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/global-estimation.html" class="uri">https://jslefche.github.io/sem_book/global-estimation.html</a><br />
+<strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021</a></p>
 <p><br />
 <br />
 </p>
@@ -356,7 +358,9 @@ For the course, we’ll also use a number of common data sets which you can down
             <a href="lecture_pdfs/Nonlinear_nonnormal.pdf">A Nonlinear, Non-normal world</a>, <a href="files/scripts/nonlinear_nonnormal.R">code</a><br />
             <a href="lecture_pdfs/Categorical_Variables.pdf">Categorical Variables and Multigroup Analysis</a>, <a href="files/scripts/Categorical_Vars.R">code</a>, <a href="files/scripts/multigroup_margins.R">multigroup_margins.R</a><br />
             <a href="lecture_pdfs/Mixed_Models.pdf">Mixed Models in SEM</a>, <a href="files/scripts/Mixed_Models.R">code</a><br />
-<strong>Readings:</strong> <a href="http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html">piecewiseSEM vignette</a>, <a href="https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0">Shipley 2009</a>, <a href="https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0">Lefcheck 2016</a> <strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/local-estimation.html" class="uri">https://jslefche.github.io/sem_book/local-estimation.html</a> <strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021</a></p>
+<strong>Readings:</strong> <a href="http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html">piecewiseSEM vignette</a>, <a href="https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0">Shipley 2009</a>, <a href="https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0">Lefcheck 2016</a><br />
+<strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/local-estimation.html" class="uri">https://jslefche.github.io/sem_book/local-estimation.html</a><br />
+<strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021</a></p>
 <p><br />
 <br />
 </p>

@@ -52,6 +52,6 @@ install.packages("tidyverse")
 
 install.packages("lavaanPlot")
 
-install.packages("daggity")
+install.packages("dagitty")
 
 devtools::install_github("jslefche/piecewiseSEM@devel")
