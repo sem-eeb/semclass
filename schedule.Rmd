@@ -21,13 +21,13 @@ __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-intro-2020
 \
 
 ## Day 2. Covariance Based SEM  
-__Overview:__  We'll pick up where we left off discussing covariance-based estimation. We'll spend time discussing how we evaluate an SEM and what we report. We'll end the day (if we have time) exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.  
+__Overview:__  We'll discuss covariance-based estimation, how we evaluate an SEM and what we report. We'll end the day (if we have time) exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.  
 __Lectures:__  	[Engines of SEM: Covariance-Based Estimation](lecture_pdfs/Intro_to_Likelihood_Fitting.pdf), [code](files/scripts/Likelihood_Fitting.R)    
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [What does it mean to evaluate a multivariate hypothesis?](lecture_pdfs/Assesing_Likelihood_Fits.pdf), [code](files/scripts/Assessing_Likelihood.R), [fitted_lavaan.R](files/scripts/fitted_lavaan.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Latent Variable models](lecture_pdfs/Latent_Variables.pdf), [code](files/scripts/Latent_variables.R)  
 __Readings:__  [Grace and Bollen 2005](https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0)  
-__Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-covariance-2020  
 __Book Chapter:__ https://jslefche.github.io/sem_book/global-estimation.html
+__Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-covariance-2020  
 
 \
 \
@@ -39,14 +39,14 @@ __Lectures:__  	[Engines of SEM: Local Estimation with piecewiseSEM](lecture_pdf
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Categorical Variables and Multigroup Analysis](lecture_pdfs/Categorical_Variables.pdf), [code](files/scripts/Categorical_Vars.R), [multigroup_margins.R](files/scripts/multigroup_margins.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Mixed Models in SEM](lecture_pdfs/Mixed_Models.pdf), [code](files/scripts/Mixed_Models.R)    
 __Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0), [Lefcheck 2016](https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0)  
-__Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2020  
 __Book Chapter:__ https://jslefche.github.io/sem_book/local-estimation.html
+__Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2020  
 
 \
 \
 
 ## Day 4. Special Topics in SEM  
-__Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered.  
+__Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered. The good news: you get to choose! Fill out our poll [here](https://forms.gle/QrkC2H2ocNDERC3t7) to indicate your preference by Day 3.
 __Lectures:__  [Engines of SEM: Bayesian SEM](lecture_pdfs/bayesian_sem.pdf), [code](files/scripts/bayesian_sem.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Spatial Data in SEM](lecture_pdfs/Spatial_Autocorrelation.pdf), [code](files/scripts/Spatial_autocorrelation.R), [helper functions](files/scripts/residuals.R)   
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Timseries and Temporal Autocorrelation in SEM](lecture_pdfs/Temporal_Autocorrelation.pdf), [code](files/scripts/Temporal_Autocorrelation.R)   
