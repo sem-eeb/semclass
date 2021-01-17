@@ -22,8 +22,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -78,6 +76,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -320,15 +319,15 @@ $(document).ready(function () {
 </div>
 
 
-<p>The general schedule for the course is below. Please note, for readings the u/p is semclass for both. For code, please see <a href="https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0">this dropbox</a> for a static view. During the course itself, I’ll give you share access so that you can update files as things change. Please <a href="./files/scripts/Install_Required_Packages.R">run this script</a> in R to install the packages you will need for the course before day 1.<br />
+<p>The general schedule for the course is below. For code, please see <a href="https://www.dropbox.com/sh/objbunt4wxdlnxb/AAB38yRdxi62BlMC1ca_SYPJa?dl=0">this dropbox</a> for a static view. During the course itself, we’ll give you share access so that you can update files as things change. Please <a href="./files/scripts/Install_Required_Packages.R">run this script</a> in R to install the packages you will need for the course before day 1.<br />
 <br />
 For the course, we’ll also use a number of common data sets which you can download (and put into a data folder) <a href="files/data.zip">here</a>.<br />
 <br />
 </p>
 <div id="day-1.-introduction-to-sem" class="section level2">
 <h2>Day 1. Introduction to SEM</h2>
-<p><strong>Overview:</strong> We discuss just what is SEM. Along the way we’ll discuss it’s origins, give a general example of moving from a traditional ANOVA-esque framework, and finally discuss how to build a well-justified causal model. Causality will be central, and we won’t pull any punches! We’ll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.<br />
-<strong>Lectures:</strong> <a href="lecture_pdfs/SEM_Intro_And_History.pdf">What is SEM? A Practical and Historical Overview</a><br />
+<p><strong>Overview:</strong> We discuss just what is SEM. Along the way we’ll discuss it’s origins, give a general example of moving from a traditional ANOVA-esque framework and to observational data, and finally discuss how to build a well-justified causal model. Causality will be central, and we won’t pull any punches! We’ll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.<br />
+<strong>Lectures:</strong> <a href="lecture_pdfs/1_A_Brief_History.pdf">What is SEM? A Practical and Historical Overview</a><br />
             <a href="lecture_pdfs/Anatomy_of_SEM.pdf">Anatomy of SEM</a><br />
             <a href="lecture_pdfs/Multivariate_Causal_Models.pdf">Building Multivariate Causal Models</a>, <a href="files/scripts/multivariate_causal_models.R">code</a><br />
 <strong>Readings:</strong> <a href="https://www.dropbox.com/s/zbj2h646z00daxx/Grace%20et%20al%202010%20Ecol%20Monogr.pdf?dl=0">Grace 2010</a> (overview), <a href="https://www.dropbox.com/s/cuwk8vngmqjgfgc/Whalen%20et%20al%202013%20Ecology.pdf?dl=0">Whalen et al. 2013</a> (example) (note: semclass/semclass for pdfs)<br />
@@ -340,25 +339,27 @@ For the course, we’ll also use a number of common data sets which you can down
 </div>
 <div id="day-2.-covariance-based-sem" class="section level2">
 <h2>Day 2. Covariance Based SEM</h2>
-<p><strong>Overview:</strong> We’ll pick up where we left off discussing covariance-based estimation. We’ll spend time discussing how we evaluate an SEM and what we report. We’ll end the day exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.<br />
+<p><strong>Overview:</strong> We’ll pick up where we left off discussing covariance-based estimation. We’ll spend time discussing how we evaluate an SEM and what we report. We’ll end the day (if we have time) exploring the concept of latent variables - variables for which we do not actually have a measured variable, but for which we have one or more indicators.<br />
 <strong>Lectures:</strong> <a href="lecture_pdfs/Intro_to_Likelihood_Fitting.pdf">Engines of SEM: Covariance-Based Estimation</a>, <a href="files/scripts/Likelihood_Fitting.R">code</a><br />
             <a href="lecture_pdfs/Assesing_Likelihood_Fits.pdf">What does it mean to evaluate a multivariate hypothesis?</a>, <a href="files/scripts/Assessing_Likelihood.R">code</a>, <a href="files/scripts/fitted_lavaan.R">fitted_lavaan.R</a><br />
             <a href="lecture_pdfs/Latent_Variables.pdf">Latent Variable models</a>, <a href="files/scripts/Latent_variables.R">code</a><br />
 <strong>Readings:</strong> <a href="https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0">Grace and Bollen 2005</a><br />
-<strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-covariance-2020" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-covariance-2020</a></p>
+<strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-covariance-2020" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-covariance-2020</a><br />
+<strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/global-estimation.html" class="uri">https://jslefche.github.io/sem_book/global-estimation.html</a></p>
 <p><br />
 <br />
 </p>
 </div>
 <div id="day-3.-piecewise-sem" class="section level2">
 <h2>Day 3. Piecewise SEM</h2>
-<p><strong>Overview:</strong> We move beyond covariance based techniques into local estimation techniques that embrace the graph theoretic approach to SEM via the <code>piecewiseSEM</code> package by Jon Lefcheck.<br />
+<p><strong>Overview:</strong> We move beyond covariance based techniques into local estimation techniques that unite the graph theoretic approach with SEM via the <code>piecewiseSEM</code> package by Jon Lefcheck.<br />
 <strong>Lectures:</strong> <a href="lecture_pdfs/Local_Estimation.pdf">Engines of SEM: Local Estimation with piecewiseSEM</a>, <a href="files/scripts/Local_Estimation.R">code</a><br />
             <a href="lecture_pdfs/Nonlinear_nonnormal.pdf">A Nonlinear, Non-normal world</a>, <a href="files/scripts/nonlinear_nonnormal.R">code</a><br />
             <a href="lecture_pdfs/Categorical_Variables.pdf">Categorical Variables and Multigroup Analysis</a>, <a href="files/scripts/Categorical_Vars.R">code</a>, <a href="files/scripts/multigroup_margins.R">multigroup_margins.R</a><br />
             <a href="lecture_pdfs/Mixed_Models.pdf">Mixed Models in SEM</a>, <a href="files/scripts/Mixed_Models.R">code</a><br />
 <strong>Readings:</strong> <a href="http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html">piecewiseSEM vignette</a>, <a href="https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0">Shipley 2009</a>, <a href="https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0">Lefcheck 2016</a><br />
-<strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2020" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2020</a></p>
+<strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2020" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2020</a><br />
+<strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/local-estimation.html" class="uri">https://jslefche.github.io/sem_book/local-estimation.html</a></p>
 <p><br />
 <br />
 </p>
