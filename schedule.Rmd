@@ -9,9 +9,9 @@ For the course, we'll also use a number of common data sets which you can downlo
 
 ## Day 1. Introduction to SEM  
 __Overview:__  We discuss just what is SEM. Along the way we'll discuss it's origins, give a general example of moving from a traditional ANOVA-esque framework and to observational data, and finally discuss how to build a well-justified causal model. Causality will be central, and we won't pull any punches! We'll end the day by starting to talk about how to fit SEMs using likelihood using covariance-based estimation with likelihood.  
-__Lectures:__  [What is SEM? A Practical and Historical Overview](lecture_pdfs/1_A_Brief_History.pdf)  
+__Lectures:__  [What is SEM? A Practical and Historical Overview](lecture_pdfs/A_Brief_History.pdf)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-	[Anatomy of SEM](lecture_pdfs/2_The_Basics.pdf)  
+	[Anatomy of SEM](lecture_pdfs/The_Basics.pdf)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 	[Building Multivariate Causal Models](lecture_pdfs/Multivariate_Causal_Models.pdf), [code](files/scripts/multivariate_causal_models.R)  
 __Readings:__  [Grace 2010](https://www.dropbox.com/s/zbj2h646z00daxx/Grace%20et%20al%202010%20Ecol%20Monogr.pdf?dl=0) (overview), [Whalen et al. 2013](https://www.dropbox.com/s/cuwk8vngmqjgfgc/Whalen%20et%20al%202013%20Ecology.pdf?dl=0) (example) (note: semclass/semclass for pdfs)  
