@@ -14,6 +14,7 @@ __Lectures:__  [What is SEM? A Practical and Historical Overview](lecture_pdfs/A
 	[Anatomy of SEM](lecture_pdfs/The_Basics.pdf)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 	[Building Multivariate Causal Models](lecture_pdfs/Multivariate_Causal_Models.pdf), [code](files/scripts/multivariate_causal_models.R)  
+	[Jon causality - alternate explanation](lecture_pdfs/Causality (Jon).pdf)
 __Readings:__  [Grace 2010](https://www.dropbox.com/s/zbj2h646z00daxx/Grace%20et%20al%202010%20Ecol%20Monogr.pdf?dl=0) (overview), [Whalen et al. 2013](https://www.dropbox.com/s/cuwk8vngmqjgfgc/Whalen%20et%20al%202013%20Ecology.pdf?dl=0) (example) (note: semclass/semclass for pdfs)  
 __Optional Reading:__ [Matsueda 2012](https://www.dropbox.com/s/a2y7z4pmfda1qwq/Matsueda%202012%20history.pdf?dl=0) (history), [Pearl 2012a](https://www.dropbox.com/preview/2020%20Virtual/readings/pearl-causal-lecture.pdf?role=work) (history of causality), [Grace and Irvine 2019](readings/Grace_and_Irvine_2019.pdf) (building causal models for SEM)  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-intro-2021  
@@ -47,7 +48,7 @@ __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021
 \
 
 ## Day 4. Special Topics in SEM  
-__Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered. The good news: you get to choose! Fill out our poll [here](https://forms.gle/QrkC2H2ocNDERC3t7) to indicate your preference by Day 3.
+__Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered. The good news: you get to choose! Fill out our poll [here](https://forms.gle/QrkC2H2ocNDERC3t7) to indicate your preference by Day 3.  
 __Lectures:__  [Engines of SEM: Bayesian SEM](lecture_pdfs/bayesian_sem.pdf), [code](files/scripts/bayesian_sem.R)  
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Spatial Data in SEM](lecture_pdfs/Spatial_Autocorrelation.pdf), [code](files/scripts/Spatial_autocorrelation.R), [helper functions](files/scripts/residuals.R)   
 	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Timseries and Temporal Autocorrelation in SEM](lecture_pdfs/Temporal_Autocorrelation.pdf), [code](files/scripts/Temporal_Autocorrelation.R)   
