@@ -23,15 +23,6 @@
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -76,7 +67,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -323,6 +313,7 @@ $(document).ready(function () {
 <br />
 For the course, we’ll also use a number of common data sets which you can download (and put into a data folder) <a href="files/data.zip">here</a>.<br />
 <br />
+Lecture recordings are available on <a href="https://youtube.com/playlist?list=PL8ARh53RvgKGxjtPfFxIfr9MfjWW4zjXl">this unlisted youtube playlist</a>.<br />
 </p>
 <div id="day-1.-introduction-to-sem" class="section level2">
 <h2>Day 1. Introduction to SEM</h2>
@@ -398,7 +389,7 @@ For the course, we’ll also use a number of common data sets which you can down
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
