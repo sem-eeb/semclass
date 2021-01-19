@@ -23,15 +23,6 @@
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
-
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -76,7 +67,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -349,7 +339,8 @@ Lecture recordings are available on <a href="https://youtube.com/playlist?list=P
 <strong>Readings:</strong> <a href="https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0">Grace and Bollen 2005</a><br />
 <strong>Book Chapter:</strong> <a href="https://jslefche.github.io/sem_book/global-estimation.html" class="uri">https://jslefche.github.io/sem_book/global-estimation.html</a><br />
 <strong>Etherpad:</strong> <a href="http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021" class="uri">http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021</a><br />
-<strong>Jamboards:</strong> <a href="https://jamboard.google.com/d/16iqYY0yO8-_uKw2wSdER1LHTFvnx_4kNAh47AZRAXao/edit?usp=sharing">Scratch Jamboard</a></p>
+<strong>Jamboards:</strong> <a href="https://jamboard.google.com/d/16iqYY0yO8-_uKw2wSdER1LHTFvnx_4kNAh47AZRAXao/edit?usp=sharing">Scratch Jamboard</a><br />
+<strong>Code:</strong> <a href="https://pad.riseup.net/p/fXWXNoB7SuZ1uwx9Ar65-keep">Riseup Pad</a></p>
 <p><br />
 <br />
 </p>
@@ -399,7 +390,7 @@ Lecture recordings are available on <a href="https://youtube.com/playlist?list=P
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

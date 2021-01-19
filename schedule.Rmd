@@ -33,7 +33,8 @@ __Lectures:__  	[Engines of SEM: Covariance-Based Estimation](lecture_pdfs/Intro
 __Readings:__  [Grace and Bollen 2005](https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0)  
 __Book Chapter:__ https://jslefche.github.io/sem_book/global-estimation.html  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021  
-__Jamboards:__ [Scratch Jamboard](https://jamboard.google.com/d/16iqYY0yO8-_uKw2wSdER1LHTFvnx_4kNAh47AZRAXao/edit?usp=sharing)
+__Jamboards:__ [Scratch Jamboard](https://jamboard.google.com/d/16iqYY0yO8-_uKw2wSdER1LHTFvnx_4kNAh47AZRAXao/edit?usp=sharing)  
+__Code:__ [Riseup Pad](https://pad.riseup.net/p/fXWXNoB7SuZ1uwx9Ar65-keep)  
 
 \
 \
