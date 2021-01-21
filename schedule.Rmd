@@ -54,6 +54,8 @@ __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021
 ## Day 4. Special Topics in SEM  
 __Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered. The good news: you get to choose! Fill out our poll [here](https://forms.gle/QrkC2H2ocNDERC3t7) to indicate your preference by Day 3.  
 __Lectures:__  [Categorical Variables in SEM](lecture_pdfs/Categorical_Variables_OVB.pdf), [code](files/scripts/Categorical_Vars.R)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+[Standardized coefficients](lecture_pdfs/Standardized_coefficients.pdf); [data](files/data/anderson.csv), [code](files/scripts/Standardized_coefficients.R)  
 __Readings:__    [Bowen et al. 2017](readings/Bowen_et_al_2017.pdf), [causal model structure and random effects](https://rpubs.com/jebyrnes/causal_mods)  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-advanced-2021  
 
