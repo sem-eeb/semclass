@@ -66,7 +66,7 @@ __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-advanced-2021
 
 ## Day 5. Open Lab and Presentations  
 __Overview:__  In the morning, we'll have an open lab. Students will work on their own data and projects with an aim to building a 2-3 slide powerpoint presentation detailing 1. The problem/system, 2. The model they built, and 3. The Final result and any challenges. We'll present these in the afternoon, hopefully in a convivial atmosphere, after a brief primer on warming up for a talk you are nervous about!  
-__Lectures:__  How to fool yourself with SEM!  
+__Lectures:__  [How to reject a paper that uses SEM](lecture_pdfs/Parting_Thoughts.pdf)  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-lab-2021  
 
 \
