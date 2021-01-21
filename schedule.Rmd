@@ -33,17 +33,18 @@ __Lectures:__  	[Engines of SEM: Covariance-Based Estimation](lecture_pdfs/Intro
 __Readings:__  [Grace and Bollen 2005](https://www.dropbox.com/s/s625kis90k33hxn/Grace%20%26%20Bollen%202005%20Bull%20Ecol%20Soc%20Amer.pdf?dl=0)  
 __Book Chapter:__ https://jslefche.github.io/sem_book/global-estimation.html  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-covariance-2021  
+__Jamboards:__ [Scratch Jamboard](https://jamboard.google.com/d/16iqYY0yO8-_uKw2wSdER1LHTFvnx_4kNAh47AZRAXao/edit?usp=sharing)  
+__Code:__ [Riseup Pad](https://pad.riseup.net/p/fXWXNoB7SuZ1uwx9Ar65-keep)  
 
 \
 \
 
 ## Day 3. Piecewise SEM  
-__Overview:__  We move beyond covariance based techniques into local estimation techniques that unite the graph theoretic approach with SEM via the `piecewiseSEM` package by Jon Lefcheck.  
-__Lectures:__  	[Engines of SEM: Local Estimation with piecewiseSEM](lecture_pdfs/Local_Estimation.pdf), [code](files/scripts/Local_Estimation.R)      
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [A Nonlinear, Non-normal world](lecture_pdfs/Nonlinear_nonnormal.pdf), [code](files/scripts/nonlinear_nonnormal.R)      
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Categorical Variables and Multigroup Analysis](lecture_pdfs/Categorical_Variables.pdf), [code](files/scripts/Categorical_Vars.R), [multigroup_margins.R](files/scripts/multigroup_margins.R)  
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Mixed Models in SEM](lecture_pdfs/Mixed_Models.pdf), [code](files/scripts/Mixed_Models.R)    
-__Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0), [Lefcheck 2016](https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0)  
+__Overview:__  We move beyond covariance based techniques into local estimation techniques that unite the graph theoretic approach with SEM via the `piecewiseSEM` package.  
+__Lectures:__  	[Local estimation: an introduction](lecture_pdfs/Local_Estimation.pdf), [code](files/scripts/Local_Estimation_new.R)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+[Extensions to local estimation](lecture_pdfs/Local_Estimation_Extensions.pdf), [data](files/data/durocher.csv), [code](files/scripts/Local_Estimation_Extensions.R)  
+__Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0), [Shipley 2013](https://www.dropbox.com/s/gf8v8r8u8xmpbh4/Shipley%202013%20Ecology.pdf?dl=0), [Lefcheck 2016](https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0), [Shipley and Douma 2020](https://www.dropbox.com/s/xmxrahu21k66z9l/Shipley%20%26%20Douma%202020%20Ecology.pdf?dl=0)  
 __Book Chapter:__ https://jslefche.github.io/sem_book/local-estimation.html  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021  
 
