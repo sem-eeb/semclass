@@ -73,159 +73,118 @@ lapply(bowen_mod[-length(bowen_mod)], generic_tukey)
 meadows<-read.csv("../data/FinnishMeadows_Multigroup.csv")
 
 
-####################################################
-# Multigroup Analysis with One Coefficient      ####
-####################################################
+###########################
+# Penguin Example      ####
+###########################
+#data
+library(palmerpenguins)
+
+#for figures
+library(ggplot2)
+library(patchwork)
+
+penguins <- na.omit(penguins)
+
+#view some relationships
+flipper_plot <- ggplot(data = penguins,
+                       aes(x = body_mass_g, 
+                           y = flipper_length_mm,
+                           color = species, fill = species)) +
+  geom_point() +
+  stat_smooth(method = "lm") +
+  theme_minimal(base_size = 17) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4")) +
+  labs(fill = "", color = "")
 
 
-meadows$mass <- meadows$mass/100
-meadowModel<-'rich ~ elev + mass
-mass ~ me*elev'
+size_plot <- ggplot(data = penguins,
+                    aes(x = species, 
+                        y = body_mass_g,
+                        fill = species)) +
+  geom_boxplot() +
+  theme_minimal(base_size = 17) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4"))  +
+  guides(fill = "none")
 
 
-#different fits - one whole shebang, once grouped with everything varying, one grouped, but with everything constrained
-meadowFit<-sem(meadowModel, data=meadows)
+flipper_plot + size_plot + plot_layout(guides = "collect")
 
-coef(meadowFit)
-summary(meadowFit)
-
-#OK, now introduce groups
-meadowFitFree<-sem(meadowModel, data=meadows, group="grazed")
-coef(meadowFitFree)
+#fit a model with no direct species effect
+size_mod <- lm(body_mass_g ~ species ,
+               data = penguins)
 
 
-#compare intercepts
-meadowFitFreeInt<-sem(meadowModel, data=meadows, group="grazed", meanstructure=TRUE)
+flipper_mod <- lm(flipper_length_mm ~ body_mass_g,
+                  data = penguins)
 
-meadowFitNoGroup<-sem(meadowModel, data=meadows,  meanstructure=TRUE)
+penguin_fit <- psem(
+  size_mod,
+  flipper_mod)
 
-meadowFitConstInt<-sem(meadowModel, data=meadows, group="grazed", 
-                       meanstructure=TRUE, group.equal = c("intercepts"))
-summary(meadowFitConstInt)
+#check fit
+dSep(penguin_fit)
+fisherC(penguin_fit)
+LLchisq(penguin_fit)
 
-meadowFitFree
-summary(meadowFitFree)
+#fit a flipper model with species
+flipper_mod_sp <- lm(flipper_length_mm ~ 
+                       body_mass_g + species,
+                     data = penguins)
 
-#introducing constraints
-meadowFitEqual<-sem(meadowModel, data=meadows, 
-                    group="grazed", 
-                    group.equal=c( "intercepts","regressions"),
-                    meanstructure=TRUE)
+penguin_fit_species <- psem(
+  size_mod,
+  flipper_mod_sp)
 
-coef(meadowFitEqual)
-
-####
-# Comparing constrained and unconstrained models ####
-####
-
-
-#is the constraint OK?
-anova(meadowFitFree, meadowFitEqual)
-
-#constrain just the elev-mass relationship
-meadowModel2<-'rich ~ c("me", "me")*elev + mass
-mass ~ elev'
-
-meadowFitFree2<-sem(meadowModel2, data=meadows, group="grazed")
-
-coef(meadowFitFree2)
-summary(meadowFitFree2)
-
-#test to see if this is one of the culprits!
-anova(meadowFitFree, meadowFitFree2)
-
-###############
-#Exercise- split by par2 ####
-###############
-
-meadowFitFreePar2<-sem(meadowModel, data=meadows, group="par2")
-meadowFitEqualPar2<-sem(meadowModel, data=meadows, group="par2", 
-                        group.equal=c( "intercepts", "regressions"))
-
-summary(meadowFitFreePar2)
-
-# Test Constraints
-anova(meadowFitEqualPar2, meadowFitFreePar2)
+#check fit
+fisherC(penguin_fit_species)
+LLchisq(penguin_fit_species)
+AIC(penguin_fit_species)
 
 
-######
-# Exercise: Try other constraints & group - here's one
-######
+# interactions
+flipper_mod_int <- lm(flipper_length_mm ~ 
+                        body_mass_g * species,
+                      data = penguins)
 
-meadowModel3<-'rich ~ c("re", "re")*elev + mass
-mass ~ elev'
+penguin_fit_int <- psem(
+  size_mod,
+  flipper_mod_int)
 
-meadowFitFreePar2_3<-sem(meadowModel3, data=meadows, group="par2")
+#compare the models
+AIC(penguin_fit)
+AIC(penguin_fit_species)
+AIC(penguin_fit_int)
 
-#does it matter?  Yes!
-anova(meadowFitFreePar2, meadowFitFreePar2_3)
+anova(penguin_fit, penguin_fit_species, penguin_fit_int)
 
-#see others that may vary
-coef(meadowFitFreePar2_3)
+#can we see interaction coefs?
+coefs(penguin_fit_int)
 
-######
-# Exercise: Try releasing constraints
-######
+#oops, no, so, emmeans!
+library(emmeans)
 
+emmeans(size_mod, ~species)
 
-meadowModelNoLabel<-'rich ~ elev + mass
-mass ~ elev'
+#get average mass by species
+weight_list <- split(penguins$body_mass_g, penguins$species)
+weight_vec <- sapply(weight_list, mean)
 
+emmeans(flipper_mod_int, ~ species|body_mass_g, 
+        at = list(body_mass_g =weight_vec) )
 
-meadowFitOneFree<-sem(meadowModelNoLabel, data=meadows, group="grazed", 
-                      group.equal = c("regressions", "intercepts"),
-                      group.partial = c("mass ~ elev", "mass ~ 1"))
+emtrends(flipper_mod_int, 
+         ~species,
+         var = "body_mass_g")
 
+###########################
+# OVB Models           ####
+###########################
+library(lme4)
 
-summary(meadowFitOneFree)
+temp_mod <- lmer(temperature ~ (1|Site), data = dat)
 
-meadowFitTwoFree<-sem(meadowModelNoLabel, data=meadows, group="grazed", 
-                      group.equal = c("regressions", "intercepts"),
-                      group.partial=c("mass ~ elev", "mass ~ 1",
-                                      "rich ~ mass", "rich ~ 1"))
-
-summary(meadowFitTwoFree)
-
-
-#compare to constrained model
-anova(meadowFitTwoFree, meadowFitFree)
-
-
-###
-# Multigroup with piecewiseSEM ###
-###
-
-meadows$grazed <- factor(meadows$grazed)
-
-#Fully unconstrained model
-rich_unconstrained <- lm(rich ~ elev*grazed + mass * grazed, data=meadows)
-mass_unconstrained <- lm(mass ~ elev * grazed, data=meadows)
-
-unconstrained_int_mod <- psem(
-  rich_unconstrained,
-  mass_unconstrained,
-  data=meadows
-)
-
-anova(unconstrained_int_mod)
-
-
-# One Constraint
-rich_constrained <- lm(rich ~ elev + mass * grazed, data=meadows)
-
-constrained_int_mod <- psem(
-  rich_constrained,
-  mass_unconstrained,
-  data=meadows
-)
-
-anova(unconstrained_int_mod, constrained_int_mod)
-
-source("./multigroup_margins.R")
-getMargins.psem(unconstrained_int_mod, 
-                at=list(grazed=c(0,1)))
-
-getStdByGroup(unconstrained_int_mod, by = "grazed")
-#####
+snail_mod <- lmer(snails ~ temperature + (1|Site), 
+                  data = dat)
 
 
