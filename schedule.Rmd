@@ -47,7 +47,7 @@ __Lectures:__  	[Local estimation: an introduction](lecture_pdfs/Local_Estimatio
 __Readings:__  [piecewiseSEM vignette](http://jslefche.github.io/piecewiseSEM/articles/piecewiseSEM.html), [Shipley 2009](https://www.dropbox.com/s/junnkl0uvm7h7i7/Shipley%202009%20Ecology.pdf?dl=0), [Shipley 2013](https://www.dropbox.com/s/gf8v8r8u8xmpbh4/Shipley%202013%20Ecology.pdf?dl=0), [Lefcheck 2016](https://www.dropbox.com/s/b3usjrtb0d71qzo/Lefcheck%202016%20Methods%20Ecol%20Evol.pdf?dl=0), [Shipley and Douma 2020](https://www.dropbox.com/s/xmxrahu21k66z9l/Shipley%20%26%20Douma%202020%20Ecology.pdf?dl=0)  
 __Book Chapter:__ https://jslefche.github.io/sem_book/local-estimation.html  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021  
-
+__Code:__ [Riseup Pad](https://pad.riseup.net/p/fXWXNoB7SuZ1uwx9Ar65-keep)  
 \
 \
 
@@ -55,16 +55,18 @@ __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-piecewise-2021
 __Overview:__  This day varies quite a bit, depending on the current class. It's a potpurri of more advances topics, not all of which will be covered. The good news: you get to choose! Fill out our poll [here](https://forms.gle/QrkC2H2ocNDERC3t7) to indicate your preference by Day 3.  
 __Lectures:__  [Categorical Variables in SEM](lecture_pdfs/Categorical_Variables_OVB.pdf), [data](files/data/bowen.csv),  [code](files/scripts/Categorical_Vars.R)  
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-[Standardized coefficients](lecture_pdfs/Standardized_coefficients.pdf); [data](files/data/anderson.csv), [code](files/scripts/Standardized_coefficients.R)  
+[Standardized Coefficients](lecture_pdfs/Standardized_coefficients.pdf); [data](files/data/anderson.csv), [code](files/scripts/Standardized_coefficients.R)  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+[Multigroup Modelling](lecture_pdfs/Multigroup_models.pdf); [code](files/scripts/Multigroup_models.R)  
 __Readings:__    [Bowen et al. 2017](readings/Bowen_et_al_2017.pdf), [causal model structure and random effects](https://rpubs.com/jebyrnes/causal_mods)  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-advanced-2021  
-
+__Code:__ [Riseup Pad](https://pad.riseup.net/p/YxCS5Fec0J7kQuuTHRET-keep)  
 \
 \
 
 ## Day 5. Open Lab and Presentations  
 __Overview:__  In the morning, we'll have an open lab. Students will work on their own data and projects with an aim to building a 2-3 slide powerpoint presentation detailing 1. The problem/system, 2. The model they built, and 3. The Final result and any challenges. We'll present these in the afternoon, hopefully in a convivial atmosphere, after a brief primer on warming up for a talk you are nervous about!  
-__Lectures:__  How to fool yourself with SEM!  
+__Lectures:__  [How to reject a paper that uses SEM](lecture_pdfs/Parting_Thoughts.pdf)  
 __Etherpad:__ http://etherpad.wikimedia.org/p/sem-eeb-lab-2021  
 
 \

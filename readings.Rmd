@@ -1,6 +1,9 @@
 ---
 title: "Readings"
 ---
+Bell, A., Fairbrother, M., & Jones, K. (2018). Fixed and Random Effects Models: Making an Informed Choice. Quality and Quantity, 53, 1051-1074 [<a href="https://www.dropbox.com/s/kby4zy0wgsc8tp6/Bell%20et%20al%202018%20Qual%20Quant.pdf?dl=0">pdf</a>]<br /><br />
+
+Bornbusch, S., Lefcheck, J.S., & Duffy, J.E. (2018) Allometry of Individual Reproduction and Defense in Eusocial Colonies: A Comparative Approach to Trade-offs in Social Spongedwelling Synalpheus Shrimps. PLoS ONE, 13(3) [<a href="https://www.dropbox.com/s/f4zrdjvktxyjtdg/Bornbusch%20et%20al%202018%20PLoS%20ONE.pdf?dl=0">pdf</a>]<br /><br />
 
 Bollen, K.A. and Pearl, J. (2012) Eight myths about causality and Structural Equation Models. In Handbook of Structural Equation Modeling.  R. Hoyle, ed. [<a href="https://www.dropbox.com/s/lgswz91qajqaxk9/bollen%20and%20pearl%208%20myths%20about%20sem.pdf?dl=0f">pdf</a>]<br /><br />
 
