@@ -3,6 +3,7 @@ title: "Structural Equation Modeling for Ecology and Evolutionary Biology"
 ---
 
 <center>
+<!--
 ```{r demoplot, fig.align='center', echo=FALSE, fig.height=4, fig.width=6,  warning=FALSE, message=FALSE, comment=NA}
 library(DiagrammeR)
 
@@ -30,6 +31,8 @@ plt <- plot.psem(mod,
 render_graph(plt)
 
 ```
+-->
+![](bernie_sem.png)
 </center>
 
 **Instructor:** [Jarrett Byrnes, PhD.](http://byrneslab.net), [Jon Lefcheck, PhD.](https://jonlefcheck.net)

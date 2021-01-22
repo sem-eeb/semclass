@@ -13,6 +13,7 @@
 
 <title>Structural Equation Modeling for Ecology and Evolutionary Biology</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -22,9 +23,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
-<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
 <script src="site_libs/viz-1.8.2/viz.js"></script>
 <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
 <script src="site_libs/grViz-binding-1.0.6.1/grViz.js"></script>
@@ -82,6 +81,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -325,8 +325,14 @@ $(document).ready(function () {
 
 
 <center>
-<div id="htmlwidget-4e7aef09c816f7f54c9f" style="width:576px;height:384px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4e7aef09c816f7f54c9f">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"abiotic\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"3,1!\"] \n  \"2\" [label = \"hetero\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"3,2!\"] \n  \"3\" [label = \"age\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"2,0!\"] \n  \"4\" [label = \"firesev\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"3,0!\"] \n  \"5\" [label = \"cover\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"4,0!\"] \n  \"6\" [label = \"rich\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"5,1!\"] \n  \"7\" [label = \"distance\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"1,1!\"] \n\"7\"->\"1\" [style = \"solid\", color = \"black\", label = \" 0.46 \"] \n\"7\"->\"2\" [style = \"solid\", color = \"black\", label = \" 0.346 \"] \n\"7\"->\"3\" [style = \"solid\", color = \"black\", label = \" -0.278 \"] \n\"3\"->\"4\" [style = \"solid\", color = \"black\", label = \" 0.454 \"] \n\"4\"->\"5\" [style = \"solid\", color = \"black\", label = \" -0.437 \"] \n\"2\"->\"6\" [style = \"solid\", color = \"black\", label = \" 0.421 \"] \n\"5\"->\"6\" [style = \"solid\", color = \"black\", label = \" 0.357 \"] \n\"1\"->\"6\" [style = \"solid\", color = \"black\", label = \" 0.348 \"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<!--
+
+```{=html}
+<div id="htmlwidget-6bbd9d618ab22c79a54c" style="width:576px;height:384px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6bbd9d618ab22c79a54c">{"x":{"diagram":"digraph {\n\ngraph [layout = \"neato\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"abiotic\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"3,1!\"] \n  \"2\" [label = \"hetero\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"3,2!\"] \n  \"3\" [label = \"age\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"2,0!\"] \n  \"4\" [label = \"firesev\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"3,0!\"] \n  \"5\" [label = \"cover\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"4,0!\"] \n  \"6\" [label = \"rich\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"5,1!\"] \n  \"7\" [label = \"distance\", shape = \"rectangle\", color = \"black\", fillcolor = \"#FFFFFF\", fontcolor = \"#000000\", pos = \"1,1!\"] \n\"7\"->\"1\" [style = \"solid\", color = \"black\", label = \" 0.46 \"] \n\"7\"->\"2\" [style = \"solid\", color = \"black\", label = \" 0.346 \"] \n\"7\"->\"3\" [style = \"solid\", color = \"black\", label = \" -0.278 \"] \n\"3\"->\"4\" [style = \"solid\", color = \"black\", label = \" 0.454 \"] \n\"4\"->\"5\" [style = \"solid\", color = \"black\", label = \" -0.437 \"] \n\"2\"->\"6\" [style = \"solid\", color = \"black\", label = \" 0.421 \"] \n\"5\"->\"6\" [style = \"solid\", color = \"black\", label = \" 0.357 \"] \n\"1\"->\"6\" [style = \"solid\", color = \"black\", label = \" 0.348 \"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+```
+-->
+<img src="bernie_sem.png" />
 </center>
 <p><strong>Instructor:</strong> <a href="http://byrneslab.net">Jarrett Byrnes, PhD.</a>, <a href="https://jonlefcheck.net">Jon Lefcheck, PhD.</a></p>
 <p><strong>TA</strong> <a href="http://byrneslab.net/project/isaac-rosenthal/">Isaac Rosenthal</a></p>
